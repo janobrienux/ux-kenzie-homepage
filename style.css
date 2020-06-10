@@ -1,53 +1,47 @@
 body {
   font-family: 'Nunito', sans-serif;
 }
-
 h1 {
-  text-align: center;
   font-size: 200%;
+  line-height: 0; 
+}
+h1, h2 {
+  text-align: center;
+  color: darkslategrey;
+}
+.design {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 h2 {
-  text-align: center;
   font-weight: 100;
   font-size: 110%;
 }
-
 nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
 }
-
 nav li {
   display: inline-block;
-  margin-top: 0;
-  margin-right: 12px;
-  margin-left: 12px;
-  margin-bottom: 0;
+  margin-left: 1em;
   text-decoration: underline;
+  color: rgb(89, 51, 228);
 }
-
-.blue-button {
-  background-color: blue;
-  text-decoration: none !important;
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.tour-button, .signup-form form input[type=submit] {
+  background-color: rgb(89, 51, 228);
   color: white;
   padding: 0.5em;
   border-radius: 6px;
   width: 8em;
-  text-align: center;
-  display: inline-block;
+  border: none;
 } 
 
-.signup-form form input[type=submit] {
-  border: none;
-  background-color: blue;
-  text-decoration: none !important;
-  color: white;
-  padding: 0.5em;
-  border-radius: 6px;
-  width: 8em;
-  text-align: center;
-  display: inline-block;
-}
